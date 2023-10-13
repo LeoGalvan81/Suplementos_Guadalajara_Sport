@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}   
+    
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(rgba(0,0,0), rgba(186,49,30));
+}
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header-contenido {
+    background-image: linear-gradient(-90deg, rgba(0,0,0, 0.5), rgba(186,49,30,0.5)) ,  url(../imagenes/Principal.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    align-items: center;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.logo {
+    font-size: 20px;
+    margin-top: 20px;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #fff;
+    display: block;
+    font-weight: 600;
+}
+.menu .navbar ul li a:hover {
+    color: #D5BB18
+}
+#menu {
+    display: none;
+}
+.menu-icono {
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.header-contenido {
+    text-align: center;
+}
+.header-contenido h1 {
+    font-size: 60px;
+    padding-top: 300px;
+    color: #fff;
+}
+.header-contenido h2 {
+    font-size: 30px;
+    color: #D5BB18;
+    padding-bottom: 20px;
+}
+.header-btn {
+    background-color: rgba(0,0,0,0.3);
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+.header-btn a {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.header-btn:hover {
+    box-shadow: 10px 5px 5px #000;
+}
+.header-btn a:hover {
+    color: #D5BB18;
+}
+.somos {
+    padding: 150px 0;
+}
+.somos h2 {
+    color: #fff;
+    font-size: 50px;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 10px #fff;
+}
+.quien-soy {
+    display: flex;
+}
+.quiensoy-img img {
+    max-width: 70vh;
+}
+.quiensoy-txt {
+    padding-left: 20px;
+    
+}
+.quiensoy-txt h5 {
+    font-size: 20px;
+    color: #D5BB18;
+    padding-bottom: 20px;
+    line-height: 1.5;
+}
+.quiensoy-txt p {
+    font-size: 18px;
+    color: #fff;
+    padding-bottom: 50px;
+    line-height: 1.5;
+}
+.quien-video {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+}
+.video video {
+    max-width: 70vh;
+}
+.mision-vision {
+    padding-left: 20px;
+}
+.mision-vision h5 {
+    font-size: 20px;
+    color: #D5BB18;
+    padding-bottom: 20px;
+}
+.mision-vision p {
+    font-size: 18px;
+    color: #fff;
+    padding-bottom: 50px;
+    line-height: 1.5;
+}
+.productos {
+    padding: 0 150px 0 150px;
+}
+.productos h2 {
+    color: #fff;
+    font-size: 50px;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 10px #fff;
+}
+.carrusel {
+   align-items: center;
+}
+.carrusel-items {
+    display: flex;
+    padding-bottom: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 35px 0;
+}
+.carrusel-item {
+    outline: 2px solid #fff;
+}
+.carrusel-item img {
+    width: 300px;
+    height: 445px;
+    object-fit: cover;
+}
+.carrusel-item:hover {
+    transform: scale(1.2);
+}
+.productos-1 {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0; 
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+.productos-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 100px;
+}
+.card {
+    border-radius: 10px;
+    min-height: 200px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    transition: .10s;
+    
+}
+.card:hover {
+    transform: scale(1.2);
+}
+.card .textos {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+.card .textos h2 {
+    font-size: 25px;
+    color: #D5BB18;
+    font-weight: 900;
+    text-shadow: none;
+    text-align: center;
+}
+.card .textos button {
+    background-color: rgba(0,0,0,0.7);
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.card .textos button a {
+    color: #fff;
+}
+
+.contactanos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.contactanos h2 {
+    color: #fff;
+    font-size: 50px;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 10px #fff; 
+}
+.contactanos p {
+    font-size: 20px;
+    color: #D5BB18;
+    padding-bottom: 20px;
+}
+.contactanos a {
+    font-size: 17px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 700;
+    margin-right: 10px;
+}
+.contactanos a i {
+    color: #D5BB18;
+    margin-right: 10px;
+}
+.formulario form .campo, textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;    
+}
+.formulario form textarea {
+    max-width: 100%;
+    min-height: 140px;
+    max-height: 150px;    
+}
+.formulario .btn-enviar {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: #000;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;    
+}
+.formulario .btn-enviar:hover {
+    background: #D5BB18;
+    color: #000;
+}
+.pago {
+    display: flex;
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+.formas-pago {
+    width: 50%;
+}
+.formas-pago i {
+    font-size: 80px;
+    color: #D5BB18;
+    padding-bottom: 20px;
+}
+.formas-pago h3 {
+    font-size: 25px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.formas-pago p {
+    font-size: 20px;
+    color: #fff;
+}
+.entrega {
+    width: 50%;
+}
+.entrega i {
+    font-size: 80px;
+    color: #D5BB18;
+    padding-bottom: 20px;    
+}
+.entrega h3 {
+    font-size: 25px;
+    color: #fff;
+    padding-bottom: 20px;    
+}
+.entrega p {
+    font-size: 20px;
+    color: #fff;   
+}
+.btn-scrolltop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    background: #D5BB18;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    cursor: pointer;
+    transform: translateY(100px);
+    transition: 0.3s;
+}
+.btn-scrolltop-on {
+    transform: translateY(0);
+}
+.fotter {
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    opacity: .8;
+}
+.fotter-menu {
+   display: flex;
+   justify-content: space-between;
+   padding: 20px 150px;
+   align-items: center;
+}
+.copy {
+    color: #fff;
+}
+.politicas li {
+    padding-bottom: 15px;
+}
+.politicas a {
+    color: #fff;
+}
+.politicas a:hover {
+    color: #D5BB18;
+}
+.marketery a {
+    color: #fff; 
+}
+.marketery a:hover {
+    color: #D5BB18;    
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+}
+.overlay:target {
+    background: rgba(0,0,0,.5);
+    visibility: visible;
+    opacity: 1;       
+}
+.overlay:target .popup-suplementos {
+    top: 30%;
+    left: 30%;
+    transform: rotate(0deg);
+}
+.popup-suplementos {
+    background-image: linear-gradient(-90deg, rgba(186,49,30, 0.6), rgba(186,49,30,0.6)) ,url(../imagenes/Suplementos.jpg); 
+    background-size: cover;
+    object-fit: cover;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    position: relative;
+    display: flex;
+    top: 30%;
+    left: 30%;
+    transform: rotate(90deg);
+    transition: all 600ms;
+}
+.botones-suplementos {
+    width: 100%;
+    padding-top: 20px;
+}.popup-suplementos button {
+    background-color: rgba(0,0,0,0.7);
+    padding: 20px 30px;
+    border-radius: 10px; 
+    margin-bottom: 15px;
+    cursor: pointer;
+    border: none;
+}
+.popup-suplementos button a {
+    color: #fff;
+    font-size: 15px;
+}
+.popup-suplementos button a:hover {
+    color: #D5BB18;
+}
+.popup-suplementos .btn-cerrar-popup {
+    width: 50px;
+    height: 50px;
+    position: absolute;    
+    right: -20px;
+    top: -20px;
+    padding: 18px;
+    background: #000;
+    color: #D5BB18;
+    border-radius: 50%;
+    line-height: 10px;
+}
+
+
+@media(max-width:991px){
+    .menu {
+        padding: 20px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1b293a;
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    .cabecera {
+        min-height: 0vh;
+        
+    }
+    .header-contenido {
+        padding-bottom: 50px;
+    }
+    .header-contenido h1 {
+        font-size: 25px;
+        padding-top: 180px;
+        padding: 180px 20px 10px;
+    }
+    .header-contenido h2 {
+        font-size: 20px;
+        padding: 20 10px 0 10px;
+    }
+    .header-btn a {
+        font-size: 17px;
+    }
+    .somos h2 {
+        font-size: 25px;
+        padding-left: 20px;
+    }
+    .quien-soy {
+        flex-direction: column;
+        align-items: center;
+    }
+    .quiensoy-img img {
+        padding: 0 20px 0 20px;
+        width: 100%;
+    }
+    .quiensoy-txt {
+        padding: 20px 20px 0 20px;
+        text-align: center;
+    }
+    .quien-video {
+        flex-direction: column;
+    }
+    .video video {
+        padding: 0 20px 0 20px;
+        width: 100%;
+    }
+    .mision-vision {
+        padding: 20px 20px 0 20px;
+        text-align: center;
+    }
+    .productos {
+        padding: 0;
+    }
+    .productos h2 {
+        padding-left: 20px;
+        font-size: 25px;
+    }
+    .carrusel {
+        padding: 0 20px 0 20px;
+    }
+    .carrusel-item img {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .contactanos {
+        display: flex;
+        flex-direction: column;
+    }
+    .contacto-textos h2 {
+        padding-left: 20px;
+        font-size: 25px;   
+    }
+    .contacto-textos p {
+        font-size: 18px;
+        padding-left: 20px;
+        
+    }
+    .contacto-textos a i {
+        padding-left: 20px;
+    }
+    .formulario {
+        padding: 0 20px 0 20px;
+    }
+    .pago {
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        align-items: center;
+    }
+    .formas-pago i {
+        font-size: 50px;
+    }
+    .formas-pago h3 {
+        font-size: 20px;
+    }
+    .formas-pago p {
+        font-size: 18px;
+    }
+    .entrega i {
+        font-size: 50px;
+    }
+    .entrega h3 {
+        font-size: 20px;
+    }
+    .entrega p {
+        font-size: 18px;
+    }
+    .fotter-menu {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .copy {
+        padding-bottom: 20px;
+    }
+    .overlay {
+        flex-direction: column;
+        top: 0;
+        left: 0;
+    }
+    .overlay:target .popup-suplementos {
+        left: 3%;
+        top: 10%;
+        
+    }
+    .popup-suplementos {
+        width: 90%;
+        height: auto;
+        
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        text-align: center;
+        align-items: center;
+    }
+    .botones-suplementos {
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+   
+}
